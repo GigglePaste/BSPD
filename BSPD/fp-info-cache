@@ -1,4 +1,4 @@
-23843097658549009
+23848293182541382
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -2568,6 +2568,27 @@ speaker CUI
 0
 2
 2
+CD4001B
+D14
+
+CD4001BM 
+0
+14
+14
+CD4001B
+D14-L
+
+CD4001BM 
+0
+14
+14
+CD4001B
+D14-M
+
+CD4001BM 
+0
+14
+14
 CD4081B
 D14
 

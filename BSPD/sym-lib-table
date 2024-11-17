@@ -1,4 +1,5 @@
 (sym_lib_table
   (version 7)
   (lib (name "CD4081B")(type "KiCad")(uri "C:/Users/Aditeya/Downloads/ul_CD4081BM/KiCADv6/2024-11-16_06-01-40.kicad_sym")(options "")(descr ""))
+  (lib (name "CD4001B")(type "KiCad")(uri "C:/Users/Aditeya/Downloads/ul_CD4001BM/KiCADv6/2024-11-17_10-29-42.kicad_sym")(options "")(descr ""))
 )
