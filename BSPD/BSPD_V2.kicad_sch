@@ -1574,7 +1574,7 @@
 				)
 			)
 		)
-		(symbol "Simulation_SPICE:NPN"
+		(symbol "Simulation_SPICE:NMOS"
 			(pin_numbers hide)
 			(pin_names
 				(offset 0)
@@ -1583,23 +1583,25 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Q"
-				(at -2.54 7.62 0)
+				(at 5.08 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "NPN"
-				(at -2.54 5.08 0)
+			(property "Value" "NMOS"
+				(at 5.08 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 63.5 0 0)
+				(at 5.08 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1607,8 +1609,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-				(at 63.5 0 0)
+			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1616,7 +1618,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+			(property "Description" "N-MOSFET transistor, drain/source/gate"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1625,7 +1627,34 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Device" "NPN"
+			(property "Sim.Device" "NMOS"
+				(at 0 -17.145 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Type" "VDMOS"
+				(at 0 -19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=D 2=G 3=S"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET simulation"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1634,259 +1663,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Type" "GUMMELPOON"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=C 2=B 3=E"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "simulation"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "NPN_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy 0.635 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 -1.27) (xy 2.794 -1.27)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 -1.27) (xy 2.794 -1.27)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778) (xy 1.27 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "NPN_1_1"
-				(pin open_collector line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_emitter line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Transistor_FET:IRF540N"
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "IRF540N"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-				(at 5.08 -1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.irf.com/product-info/datasheets/data/irf540n.pdf"
-				(at 5.08 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "33A Id, 100V Vds, HEXFET N-Channel MOSFET, TO-220"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "HEXFET N-Channel MOSFET"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO?220*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "IRF540N_0_1"
+			(symbol "NMOS_0_1"
 				(polyline
 					(pts
 						(xy 0.254 0) (xy -2.54 0)
@@ -2053,11 +1830,11 @@
 					)
 				)
 			)
-			(symbol "IRF540N_1_1"
-				(pin input line
-					(at -5.08 0 0)
+			(symbol "NMOS_1_1"
+				(pin passive line
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "G"
+					(name "D"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2072,10 +1849,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 2.54 5.08 270)
+				(pin input line
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "D"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2466,12 +2243,6 @@
 		(uuid "27ac0394-8bd7-4a68-8c6f-dee865796dee")
 	)
 	(junction
-		(at 95.25 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "413b1cbf-118d-4911-ad64-f2e61cfbe3d0")
-	)
-	(junction
 		(at 90.17 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2526,6 +2297,12 @@
 		(uuid "9a875322-cdf4-41ad-8b44-65bcc1c06b02")
 	)
 	(junction
+		(at 91.44 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ab04f3f-55f1-4501-8b0b-34188557ef1b")
+	)
+	(junction
 		(at 76.2 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2548,6 +2325,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a5323928-e8a6-46ad-862a-bf65cf23b11c")
+	)
+	(junction
+		(at 250.19 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a9dc5fec-d64c-4da4-8372-78026e3fba31")
 	)
 	(junction
 		(at 52.07 60.96)
@@ -2715,7 +2498,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 57.15) (xy 231.14 68.58)
+			(xy 231.14 55.88) (xy 231.14 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2805,7 +2588,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 132.08) (xy 72.39 133.35)
+			(xy 72.39 132.08) (xy 72.39 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2835,6 +2618,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 50.8) (xy 250.19 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "313574cb-1ff8-4262-a906-0e93f0e2b655")
+	)
+	(wire
+		(pts
 			(xy 68.58 167.64) (xy 72.39 167.64)
 		)
 		(stroke
@@ -2852,6 +2645,16 @@
 			(type default)
 		)
 		(uuid "32e821e1-14d3-4577-ad86-934a9e54dd00")
+	)
+	(wire
+		(pts
+			(xy 91.44 132.08) (xy 102.87 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "331ce692-8b71-41b1-a0c9-a99da3f011ba")
 	)
 	(wire
 		(pts
@@ -2975,7 +2778,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 55.88) (xy 147.32 57.15)
+			(xy 147.32 55.88) (xy 147.32 64.77)
 		)
 		(stroke
 			(width 0)
@@ -3175,7 +2978,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 67.31) (xy 186.69 68.58)
+			(xy 186.69 66.04) (xy 186.69 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3185,7 +2988,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 57.15) (xy 231.14 57.15)
+			(xy 242.57 55.88) (xy 231.14 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3245,7 +3048,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 46.99) (xy 250.19 52.07)
+			(xy 250.19 46.99) (xy 250.19 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3312,6 +3115,16 @@
 			(type default)
 		)
 		(uuid "8ef3a1c5-d082-4735-be76-98891916293b")
+	)
+	(wire
+		(pts
+			(xy 91.44 135.89) (xy 91.44 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90c38b56-b868-43d1-a2f8-8a880dbb5ee1")
 	)
 	(wire
 		(pts
@@ -3415,7 +3228,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 132.08) (xy 95.25 132.08)
+			(xy 87.63 132.08) (xy 91.44 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3665,16 +3478,6 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 58.42) (xy 186.69 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d59eb6d7-1c47-4452-9f4b-c3ba1c9c0d01")
-	)
-	(wire
-		(pts
 			(xy 90.17 68.58) (xy 90.17 71.12)
 		)
 		(stroke
@@ -3815,16 +3618,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 132.08) (xy 102.87 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee669202-9732-442d-a98c-fa812338e9b9")
-	)
-	(wire
-		(pts
 			(xy 224.79 68.58) (xy 231.14 68.58)
 		)
 		(stroke
@@ -3855,7 +3648,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 143.51) (xy 240.03 143.51)
+			(xy 238.76 147.32) (xy 240.03 147.32)
 		)
 		(stroke
 			(width 0)
@@ -3885,7 +3678,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 143.51) (xy 238.76 149.86)
+			(xy 238.76 147.32) (xy 238.76 149.86)
 		)
 		(stroke
 			(width 0)
@@ -3912,16 +3705,6 @@
 			(type default)
 		)
 		(uuid "fa1015a8-a646-4d6a-a03c-6173f559d878")
-	)
-	(wire
-		(pts
-			(xy 95.25 139.7) (xy 95.25 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fdf780e8-59a4-43a8-ac46-c9ce0776704c")
 	)
 	(wire
 		(pts
@@ -4408,7 +4191,7 @@
 	)
 	(global_label "10s_Implausibility_out"
 		(shape input)
-		(at 240.03 143.51 0)
+		(at 240.03 147.32 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4418,7 +4201,7 @@
 		)
 		(uuid "5fc94a05-6205-4646-b98e-5f668eba532b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 264.1815 143.51 0)
+			(at 264.1815 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5727,185 +5510,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 238.76 57.15 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "32dc6a7c-3f5e-47cc-9677-3c850d51f847")
-		(property "Reference" "R20"
-			(at 238.76 50.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R"
-			(at 238.76 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 238.76 58.928 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 238.76 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 238.76 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a9887ecb-989a-4741-963d-ec2131449932")
-		)
-		(pin "2"
-			(uuid "d382cfe1-679d-42b3-968a-174539b71e32")
-		)
-		(instances
-			(project "BSPD_V2"
-				(path "/d92b65b7-5ac6-4942-9c7f-8311f0326af7"
-					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:IRF540N")
-		(at 247.65 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "330bad0b-dfea-4fed-94aa-724b5f66b98d")
-		(property "Reference" "Q3"
-			(at 241.808 61.214 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "IRF540N"
-			(at 239.014 63.754 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 252.73 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.irf.com/product-info/datasheets/data/irf540n.pdf"
-			(at 252.73 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "33A Id, 100V Vds, HEXFET N-Channel MOSFET, TO-220"
-			(at 247.65 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "C:\\Users\\Aditeya\\Downloads\\irf540n.spi"
-			(at 247.65 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "irf540n"
-			(at 247.65 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 247.65 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=1 2=2 3=3"
-			(at 247.65 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3f7269d0-a2ba-40f6-af2c-8a9c56e39366")
-		)
-		(pin "3"
-			(uuid "fa2c32b1-66c9-4e74-87d8-c62f3d8cd406")
-		)
-		(pin "1"
-			(uuid "0e3dec56-fdce-44d0-910f-07ea5d6e83b4")
-		)
-		(instances
-			(project "BSPD_V2"
-				(path "/d92b65b7-5ac6-4942-9c7f-8311f0326af7"
-					(reference "Q3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+12V")
 		(at 147.32 50.8 0)
 		(unit 1)
@@ -6032,6 +5636,106 @@
 			(project ""
 				(path "/d92b65b7-5ac6-4942-9c7f-8311f0326af7"
 					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 247.65 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37531b60-880f-4060-b2e6-8f6cc072109e")
+		(property "Reference" "Q2"
+			(at 254 54.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NMOS"
+			(at 254 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 252.73 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 247.65 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 247.65 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 247.65 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 247.65 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 247.65 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "a756e91a-2237-42dc-9783-c1f4d21ec90b")
+		)
+		(pin "1"
+			(uuid "3b591f33-42b2-4bf7-9b0a-ffadcfa680ed")
+		)
+		(pin "2"
+			(uuid "e572e3b3-1280-4d42-85f5-6168a20e5275")
+		)
+		(instances
+			(project ""
+				(path "/d92b65b7-5ac6-4942-9c7f-8311f0326af7"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -6277,7 +5981,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 95.25 142.24 0)
+		(at 91.44 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6286,7 +5990,7 @@
 		(fields_autoplaced yes)
 		(uuid "55359fcc-fcc2-4a84-ac49-3c31b9a1ad5d")
 		(property "Reference" "#PWR018"
-			(at 95.25 148.59 0)
+			(at 91.44 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6295,7 +5999,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 95.25 147.32 0)
+			(at 91.44 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6303,7 +6007,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 142.24 0)
+			(at 91.44 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6312,7 +6016,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 142.24 0)
+			(at 91.44 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6321,7 +6025,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 95.25 142.24 0)
+			(at 91.44 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6342,16 +6046,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NPN")
+		(lib_id "Simulation_SPICE:NMOS")
 		(at 69.85 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "58b6b3f4-37c4-49d7-8920-69c1db9482ab")
-		(property "Reference" "Q4"
-			(at 75.184 144.272 0)
+		(fields_autoplaced yes)
+		(uuid "5d8ef40d-f0ba-4b2c-b560-90c1863b6021")
+		(property "Reference" "Q3"
+			(at 76.2 144.7799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6359,8 +6064,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NPN"
-			(at 74.93 147.3199 0)
+		(property "Value" "NMOS"
+			(at 76.2 147.3199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6369,7 +6074,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.35 146.05 0)
+			(at 74.93 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6377,8 +6082,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 133.35 146.05 0)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 69.85 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6386,7 +6091,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
 			(at 69.85 146.05 0)
 			(effects
 				(font
@@ -6395,8 +6100,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "NPN"
-			(at 69.85 146.05 0)
+		(property "Sim.Device" "NMOS"
+			(at 69.85 163.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6404,8 +6109,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" "GUMMELPOON"
-			(at 69.85 146.05 0)
+		(property "Sim.Type" "VDMOS"
+			(at 69.85 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6413,8 +6118,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=C 2=B 3=E"
-			(at 69.85 146.05 0)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 69.85 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6423,18 +6128,18 @@
 			)
 		)
 		(pin "3"
-			(uuid "9a1ca9a4-ba81-498b-bb27-e0f17421176b")
-		)
-		(pin "2"
-			(uuid "7b3b3e7a-14c2-4394-ba4a-16f7e0307bb1")
+			(uuid "f75838be-635c-4178-81fe-9c8f45604706")
 		)
 		(pin "1"
-			(uuid "38ccf1b9-da70-4630-aecf-d30d9d8e3b0f")
+			(uuid "835e5026-f4fc-4e72-9040-b80547afd3aa")
+		)
+		(pin "2"
+			(uuid "0b06bf98-3038-4b1f-ab95-2bddf337b725")
 		)
 		(instances
 			(project "BSPD_V2"
 				(path "/d92b65b7-5ac6-4942-9c7f-8311f0326af7"
-					(reference "Q4")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -6765,7 +6470,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 95.25 135.89 0)
+		(at 91.44 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6774,7 +6479,7 @@
 		(fields_autoplaced yes)
 		(uuid "7c3737cd-4635-4348-98a7-5a3bba0127df")
 		(property "Reference" "R19"
-			(at 97.79 134.6199 0)
+			(at 93.98 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6783,7 +6488,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 97.79 137.1599 0)
+			(at 93.98 140.9699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6792,7 +6497,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.472 135.89 90)
+			(at 89.662 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6801,7 +6506,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 95.25 135.89 0)
+			(at 91.44 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6810,7 +6515,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 95.25 135.89 0)
+			(at 91.44 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6904,7 +6609,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NPN")
+		(lib_id "Simulation_SPICE:NMOS")
 		(at 144.78 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6912,9 +6617,9 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "83cf061f-92ba-4a6d-ba56-adb8f19405c4")
+		(uuid "83bc0dd9-9627-479f-a706-039e04ced915")
 		(property "Reference" "Q1"
-			(at 149.86 68.5799 0)
+			(at 151.13 68.5799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6922,8 +6627,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NPN"
-			(at 149.86 71.1199 0)
+		(property "Value" "NMOS"
+			(at 151.13 71.1199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6932,7 +6637,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 208.28 69.85 0)
+			(at 149.86 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6940,8 +6645,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 208.28 69.85 0)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 144.78 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6949,7 +6654,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
 			(at 144.78 69.85 0)
 			(effects
 				(font
@@ -6958,8 +6663,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "NPN"
-			(at 144.78 69.85 0)
+		(property "Sim.Device" "NMOS"
+			(at 144.78 86.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6967,8 +6672,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" "GUMMELPOON"
-			(at 144.78 69.85 0)
+		(property "Sim.Type" "VDMOS"
+			(at 144.78 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6976,8 +6681,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=C 2=B 3=E"
-			(at 144.78 69.85 0)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 144.78 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6986,13 +6691,13 @@
 			)
 		)
 		(pin "3"
-			(uuid "209cb4a9-ff23-488a-94a9-2ecdd2be23a1")
+			(uuid "bc1f83a9-231a-476a-a63b-dc6b944c4e81")
 		)
 		(pin "1"
-			(uuid "75e9f764-689e-4084-8482-34237e9c5971")
+			(uuid "893f6051-c34d-4399-b869-f3195263f3e4")
 		)
 		(pin "2"
-			(uuid "46e2442a-6e9e-4883-9f78-8cbf6257d384")
+			(uuid "4929f180-5da4-4dcf-a724-da4bbb2383bf")
 		)
 		(instances
 			(project ""
@@ -7296,7 +7001,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 121.92 138.4299 0)
 			(effects
 				(font
@@ -7504,7 +7209,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 87.63 78.7399 0)
 			(effects
 				(font
@@ -7616,76 +7321,6 @@
 			(project ""
 				(path "/d92b65b7-5ac6-4942-9c7f-8311f0326af7"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 72.39 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aa9cf3dd-e7e7-47b5-8b30-b85311901edf")
-		(property "Reference" "R13"
-			(at 74.93 135.8899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R"
-			(at 74.93 138.4299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 70.612 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 72.39 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 72.39 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0aed1704-36d0-4816-a882-bcb62fae1e6b")
-		)
-		(pin "2"
-			(uuid "a5045a90-e577-42e3-8ca6-e94e9d90a693")
-		)
-		(instances
-			(project ""
-				(path "/d92b65b7-5ac6-4942-9c7f-8311f0326af7"
-					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -8143,7 +7778,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 87.63 66.0399 0)
 			(effects
 				(font
@@ -8842,76 +8477,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 147.32 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e09cf3cb-6b84-4616-98bf-9aca880f70ca")
-		(property "Reference" "R17"
-			(at 149.86 59.6899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R"
-			(at 149.86 62.2299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 145.542 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 147.32 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4abf0167-497e-4fbb-9041-54b2fcd63d27")
-		)
-		(pin "2"
-			(uuid "25ff11c6-9a95-4c0f-8dda-eaced819cf04")
-		)
-		(instances
-			(project ""
-				(path "/d92b65b7-5ac6-4942-9c7f-8311f0326af7"
-					(reference "R17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 67.31 68.58 0)
 		(unit 1)
@@ -8979,7 +8544,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 186.69 63.5 0)
+		(at 186.69 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8988,7 +8553,7 @@
 		(fields_autoplaced yes)
 		(uuid "e654c903-7e52-4d18-8fa0-cc7672ad1601")
 		(property "Reference" "R5"
-			(at 189.23 62.2299 0)
+			(at 189.23 60.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8996,8 +8561,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
-			(at 189.23 64.7699 0)
+		(property "Value" "10k"
+			(at 189.23 63.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9006,7 +8571,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.912 63.5 90)
+			(at 184.912 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9015,7 +8580,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 186.69 63.5 0)
+			(at 186.69 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9024,7 +8589,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 186.69 63.5 0)
+			(at 186.69 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
