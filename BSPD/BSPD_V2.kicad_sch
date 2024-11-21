@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "d92b65b7-5ac6-4942-9c7f-8311f0326af7")
-	(paper "A2")
+	(paper "A3")
 	(lib_symbols
 		(symbol "CD4001B:CD4001BM"
 			(pin_names
@@ -4035,7 +4035,7 @@
 	)
 	(text "8)After finishing the above, check the\n  logic once again.\n9)Look into SCS and read the rules once\n  again to look for some rules that can\n  lead to some changes in the PCB.\n"
 		(exclude_from_sim no)
-		(at 302.006 51.054 0)
+		(at 246.888 29.972 0)
 		(effects
 			(font
 				(size 1.27 1.27)
