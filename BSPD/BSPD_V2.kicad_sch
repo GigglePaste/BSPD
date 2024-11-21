@@ -4043,7 +4043,7 @@
 		)
 		(uuid "c1f13848-3b9a-4883-9acf-01f2b303e21a")
 	)
-	(text "1)Check the voltage divider values \n  for 2.2V to 10.5V from CS.\n5)Verify the time of 500ms and 10s. \n8)After finishing the above, check the\n  logic once again.\n9)Look into SCS and read the rules once\n  again to look for some rules that can\n  lead to some changes in the PCB.\n"
+	(text "1)Check the voltage divider values \n  for 2.2V to 10.5V from CS.\n8)After finishing the above, check the\n  logic once again.\n9)Look into SCS and read the rules once\n  again to look for some rules that can\n  lead to some changes in the PCB.\n"
 		(exclude_from_sim no)
 		(at 302.006 51.054 0)
 		(effects
@@ -4765,7 +4765,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2u"
+		(property "Value" "10u"
 			(at 76.2 166.3699 0)
 			(effects
 				(font
@@ -6586,7 +6586,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k"
 			(at 93.98 140.9699 0)
 			(effects
 				(font
@@ -6963,7 +6963,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "27"
 			(at 81.28 173.99 90)
 			(effects
 				(font
@@ -7313,7 +7313,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "18"
 			(at 83.82 129.794 90)
 			(effects
 				(font
