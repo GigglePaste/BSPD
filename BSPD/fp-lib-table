@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "CD4081B")(type "KiCad")(uri "C:/D DRIVE/Ashwa/KiCADs/components/ul_CD4081BM/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "CD4001B")(type "KiCad")(uri "C:/D DRIVE/Ashwa/KiCADs/components/ul_CD4001BM/KiCADv6/footprints.pretty")(options "")(descr ""))
+)
