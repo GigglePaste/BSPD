@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "CD4001BM")(type "KiCad")(uri "C:/Users/Aditeya/Downloads/ul_CD4001BM/KiCADv6/footprints.pretty")(options "")(descr ""))
+)

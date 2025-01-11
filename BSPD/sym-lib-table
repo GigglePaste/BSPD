@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "CD4001BM")(type "KiCad")(uri "C:/Users/Aditeya/Downloads/ul_CD4001BM/KiCADv6/2024-12-22_04-56-56.kicad_sym")(options "")(descr ""))
+  (lib (name "CD4081BM")(type "KiCad")(uri "C:/Users/Aditeya/Downloads/ul_CD4081BM/KiCADv6/2024-12-24_16-45-57.kicad_sym")(options "")(descr ""))
+  (lib (name "CD4043BD")(type "KiCad")(uri "C:/Users/Aditeya/Downloads/ul_CD4043BD (1)/KiCADv6/2024-12-25_08-49-26.kicad_sym")(options "")(descr ""))
+  (lib (name "CD4011BM")(type "KiCad")(uri "C:/Users/Aditeya/Downloads/ul_CD4011BM/KiCADv6/2024-12-25_09-05-50.kicad_sym")(options "")(descr ""))
+)
