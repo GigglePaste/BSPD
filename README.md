@@ -1,2 +1,2 @@
 The current schematic;
-![image](https://github.com/user-attachments/assets/645659da-df9f-4e39-b2da-4be4990c5aa8)
+![image](https://github.com/user-attachments/assets/cd62b3b9-0b50-4559-bafc-9bf4259f043b)
