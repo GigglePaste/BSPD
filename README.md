@@ -1,3 +1,2 @@
-Current schematic (subject to change) (Up to data as of 19/01/2025)
-![image](https://github.com/user-attachments/assets/5deaec0e-0d4e-4d61-bcde-e27d20d479d1)
-
+Current schematic (subject to change) (Up to data as of 23/01/2025)
+![image](https://github.com/user-attachments/assets/21e04c7c-b156-4711-8dcf-a2d2d6f8555e)
